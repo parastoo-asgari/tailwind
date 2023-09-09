@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../dist/output.css">
+
+</head>
+
+<body>
+    <main class="w-full 2xl:container mx-auto  font-Montserra">
+
+        <div class="min-h-full">
+            <nav class="bg-gray-800 ">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="flex h-16 items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-8 w-8"
+                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                    alt="Your Company">
+                            </div>
+                            <div class="hidden md:block">
+                                <div class="ml-10 flex items-baseline space-x-4">
+                                    <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                        aria-current="page">Home</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Page</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">New</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-4 flex items-center md:ml-6">
+                                <button type="button"
+                                    class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                    <span class="absolute -inset-1.5"></span>
+                                    <span class="sr-only">View notifications</span>
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                                    </svg>
+                                </button>
+
+                                <!-- Profile dropdown -->
+                                <div class="relative ml-3">
+                                    <div>
+                                        <button type="button"
+                                            class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                            id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                            <span class="absolute -inset-1.5"></span>
+                                            <span class="sr-only">Open user menu</span>
+                                            <img class="h-8 w-8 rounded-full"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt="">
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="-mr-2 flex md:hidden">
+                            <!-- Mobile menu button -->
+                            <button type="button"
+                                class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="absolute -inset-0.5"></span>
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+
+                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="md:hidden" id="mobile-menu">
+                    <div class="border-t border-gray-700 pb-3 pt-4">
+                        <div class="flex items-center px-5">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full"
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                            </div>
+                            <div class="ml-3">
+                                <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+                                <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+                            </div>
+                            <button type="button"
+                                class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">View notifications</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <!-- end header------------ -->
+            <section class=" flex w-[100%]  flex-wrap  bg-[#0a183d] p-[50px] ">
+                <div class="w-full lg:w-1/2  p-10 mt-2">
+                    <h1 class="text-[50px] text-[#fc0254] m-4 font-Montserra">Listen to new music.</h1>
+                    <p class="text-blue-50  mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                        gravida.</p>
+                    <div class="mt-[50px] flex flex-wrap ">
+                        <a class=" text-[18px] uppercase text-xl text-white  p-4 bg-[#fc0254] flex justify-center items-center rounded-[30px] me-3 hover:translate-y-[-8px] transition duration-500"
+                            href="#">download now</a>
+                        <a class="text-[18px] uppercase text-white  p-4 lg:ms-5 ms-3  bg-[#383b70] flex justify-center items-center rounded-[30px] m-4 lg:m-0 hover:translate-y-[-8px] transition duration-500"
+                            href="#">start free trial</a>
+                    </div>
+                </div>
+                <div class=" w-full lg:w-1/2 mt-2">
+                    <figure class="w-[80%] ">
+                        <img class="w-full" src="img/sec1.png" alt="">
+                    </figure>
+                </div>
+            </section>
+            <!-- end sec1------------------ -->
+            <section class="w-full flex flex-wrap  p-5">
+                <div class="w-full lg:w-1/2  text-[70px] mt-[50px]">Unlimited Access to 100K tracks</div>
+                <div class="w-full lg:w-1/2  p-5">
+                    <p class="text-[20px] mt-[50px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices
+                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Quis ipsum suspendisse ultrices gravida.Ablandit nunc. Pellentesque id eros venenatis,
+                        sollicitudin neque sodales, vehicula nibh. Nam massa odio, porttitor vitae efficitur non,
+                        ultric-ies volutpat tellus.</p>
+                    <div class="mt-[40px] ">
+                        <a class="uppercase bg-[#fc0254] px-[35px]  py-[15px] text-[20px] text-white rounded-[30px]   justify-center items-center hover:translate-y-[-8px] transition duration-500"
+                            href="#">try it now</a>
+                    </div>
+                </div>
+            </section>
+            <!-- end sec2------------- -->
+            <section class="w-full  bg-[url('../asset/img/3-f.jpg')]  flex-wrap  flex  ">
+                <div class="p-20  w-[100%] h-[200px] ">
+                    <h2 class="text-[50px] lg:text-[80px] text-white">How it works</h2>
+                </div>
+                <div class="flex flex-wrap w-full p-20  justify-evenly">
+                    <div class=" w-full lg:w-[300px] h-[300px]  ">
+                        <img class="mx-auto mt-[20px] " src="img/brain.webp " alt="">
+                        <h3 class="mt-[30px] text-white text-[30px] text-center">Create an account</h3>
+                        <p class="mt-[20px] text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur
+                            adipi-scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                            ipsum sus-pendisse ultrices gravida.</p>
+                    </div>
+                    <div class="w-full lg:w-[300px] h-[300px]  mt-[20px] lg:mt-0">
+                        <img class=" mx-auto mt-[20px]" src="img/pointer.webp" alt="">
+                        <h3 class="mt-[30px] text-white text-[30px] text-center">Choose a plan</h3>
+                        <p class="mt-[20px] text-gray-400 text-center">Donec in sodales dui, a blandit nunc.
+                            Pellen-tesque id eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam massa odio,
+                            portti-tor vitae efficitur non.</p>
+                    </div>
+                    <div class="w-full lg:w-[300px] h-[300px]  mt-[20px] lg:mt-0">
+                        <img class="mx-auto mt-[20px]" src="img/smartphone.webp" alt="">
+                        <h3 class="mt-[30px] text-white text-[30px] text-center">Download Music</h3>
+                        <p class="mt-[20px] text-gray-400 text-center">Ablandit nunc. Pellentesque id eros venenatis,
+                            sollicitudin neque sodales, vehicula nibh. Nam massa odio, porttitor vitae efficitur non,
+                            ultric-ies volutpat tellus.</p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end sec3---------------- -->
+            <section class="w-full flex flex-wrap  p-9">
+                <div class=" flex flex-wrap ">
+                    <div class="w-full lg:w-1/2  text-[70px] mt-[50px]">Our Concept & artists</div>
+                    <div class="w-full lg:w-1/2  p-5">
+                        <p class="text-[20px] mt-[50px]">Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="w-full flex flex-wrap justify-evenly mt-[40px]">
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="shadow-lg shadow-black transition duration-500 hover:translate-y-[-15px] rounded-[30px] w-full lg:w-[250px] h-[250px]"
+                                src="img/f-1.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] hover:text-[#fc0254] transition duration-500 cursor-pointer text-xl">
+                                Soul Music</figcaption>
+                        </figure>
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="shadow-lg shadow-black transition duration-500 hover:translate-y-[-15px] rounded-[30px] w-full lg:w-[250px] h-[250px]"
+                                src="img/f-2.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] hover:text-[#fc0254] transition duration-500 cursor-pointer text-xl">
+                                Live Concerts</figcaption>
+                        </figure>
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="shadow-lg shadow-black transition duration-500 hover:translate-y-[-15px] rounded-[30px] w-full lg:w-[250px] h-[250px]"
+                                src="img/f-3.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] hover:text-[#fc0254] transition duration-500 cursor-pointer text-xl">
+                                Dj Sets</figcaption>
+                        </figure>
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="shadow-lg shadow-black transition duration-500 hover:translate-y-[-15px] rounded-[30px] w-full lg:w-[250px] h-[250px]"
+                                src="img/f-4.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] hover:text-[#fc0254] transition duration-500 cursor-pointer text-xl">
+                                Live Streems</figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end sec4------------------ -->
+            <section class="w-full flex flex-wrap p-9 bg-[#0a183d]">
+                <div class="w-full lg:w-3/6  p-[30px]">
+                    <h3 class="text-[50px] text-white ">Subscription from $15/month</h3>
+                    <h4 class="text-[30px] text-[#fc0254] ">Start a free trial now</h4>
+                    <p class="text-gray-300">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                        accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="mt-[40px] ">
+                        <a class="uppercase bg-[#fc0254] px-[35px]  py-[15px] text-[20px] text-white rounded-[30px]   justify-center items-center hover:translate-y-[-8px] transition duration-500"
+                            href="#">try it now</a>
+                    </div>
+
+                </div>
+                <div class="w-full lg:w-2/5 mt-[20px] rounded-[30px] lg:ms-20  bg-[#1c294a]">
+                    <ul class=" text-justify mt-[50px] text-white lg:ps-36 ps-20">
+
+                        <li class="my-5 text-[20px] "><span class="material-symbols-outlined text-[#fc0254]">
+                                done
+                            </span>Play any track</li>
+
+                        <li class="my-5 text-[20px] "><span class="material-symbols-outlined text-[#fc0254]">
+                                done
+                            </span>Listen offline</li>
+                        <li class="my-5 text-[20px] "><span class="material-symbols-outlined text-[#fc0254]">
+                                done
+                            </span>No ad interruptions</li>
+                        <li class="my-5 text-[20px] "><span class="material-symbols-outlined text-[#fc0254] ">
+                                done
+                            </span>Unlimited skips</li>
+                        <li class="my-5 text-[20px] "><span class="material-symbols-outlined text-[#fc0254]">
+                                done
+                            </span>High quality audio</li>
+                        <li class="my-5 text-[20px] "><span class="material-symbols-outlined text-[#fc0254]">
+                                done
+                            </span>Shuffle play</li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- end sec5------------- -->
+            <section class="w-full flex flex-wrap p-9">
+                <div class=" flex flex-wrap ">
+                    <div class="w-full lg:w-1/2  text-[70px] mt-[50px]">Why go Premium</div>
+                    <div class="w-full lg:w-1/2  p-5">
+                        <p class="text-[20px] mt-[50px]">Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="w-full flex flex-wrap justify-evenly mt-[40px]">
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class=" transition duration-500 hover:translate-y-[-15px]  rounded-[50%] w-full lg:w-[250px] h-[250px]"
+                                src="img/22.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] text-xl hover:text-[#fc0254] transition duration-500 cursor-pointer ">
+                                No ad interruptions</figcaption>
+                        </figure>
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="transition duration-500 hover:translate-y-[-15px]  rounded-[50%] w-full lg:w-[250px] h-[250px]"
+                                src="img/11.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] text-xl hover:text-[#fc0254] transition duration-500 cursor-pointer">
+                                High Quality</figcaption>
+                        </figure>
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="transition duration-500 hover:translate-y-[-15px]  rounded-[50%] w-full lg:w-[250px] h-[250px]"
+                                src="img/33.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] text-xl hover:text-[#fc0254] transition duration-500 cursor-pointer">
+                                Listen Offline</figcaption>
+                        </figure>
+                        <figure class="mt-[20px] lg:mt-0 "><img
+                                class="transition duration-500 hover:translate-y-[-15px]  rounded-[50%] w-full lg:w-[250px] h-[250px]"
+                                src="img/44.jpg" alt="">
+                            <figcaption
+                                class="text-center mt-[20px] text-[#383b70] text-xl hover:text-[#fc0254] transition duration-500 cursor-pointer">
+                                Download Music</figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end seec6------------------------ -->
+            <footer class="h-full w-full lg:pt-0 pt-10 pb-10 flex flex-wrap justify-center bg-[#0a183d]">
+                <div class="lg:w-[80%] w-full flex flex-wrap ">
+                    <h2 class="lg:text-6xl text-4xl  text-white w-1/2 pt-10"><span
+                            class="text-[#fc0254]">SOL</span>MUSIC</h2>
+                    <div class="w-full flex justify-between  border-b border-stone-700">
+                        <ul class="flex py-5">
+                            <li
+                                class="lg:me-5 text-white me-2 p-2 flex justify-center items-center hover:text-[#fc0254]  border-b border-white border-opacity-0 hover:border-opacity-100 transition duration-500 capitalize text-lg">
+                                <a class="flex justify-center items-center w-full h-full" href="">home</a></li>
+                            <li
+                                class="lg:me-5 text-white me-2 p-2 flex justify-center items-center hover:text-[#fc0254]  border-b border-white border-opacity-0 hover:border-opacity-100 transition duration-500 capitalize text-lg">
+                                <a class="flex justify-center items-center w-full h-full" href="">news</a></li>
+                            <li
+                                class="lg:me-5 text-white me-2 p-2 flex justify-center items-center hover:text-[#fc0254]  border-b border-white border-opacity-0 hover:border-opacity-100 transition duration-500 capitalize text-lg">
+                                <a class="flex justify-center items-center w-full h-full" href="">contact</a></li>
+                            <li
+                                class="lg:me-5 text-white me-2 p-2 flex justify-center items-center hover:text-[#fc0254]  border-b border-white border-opacity-0 hover:border-opacity-100 transition duration-500 capitalize text-lg">
+                                <a class="flex justify-center items-center w-full h-full" href="">article</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="text-stone-600 text-xl pt-3 text-center flex justify-center">
+                            Parastoo Asgari © 2023. All Rights Reserved.</span>
+                    </div>
+
+            </footer>
+
+    </main>
+
+
+</body>
+
+</html>
